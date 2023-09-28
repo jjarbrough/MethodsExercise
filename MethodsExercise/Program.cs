@@ -21,6 +21,31 @@
             Console.WriteLine($"To {name}'s surprise there were baby {animal}s.");
             Console.WriteLine($"{name} made sure they wore their favorite {color} shirt.");
             Console.WriteLine($"{band} was playing on the ride home.");
+
+            Console.WriteLine(add(2, 2));
+            Console.WriteLine(multiply(2, 2));
+            Console.WriteLine(divide(2,2));
+            Console.WriteLine(subtract(2,2));
+        }
+
+        public static int add(int num1, int num2)
+        {   
+            return num1 + num2; 
+        }
+
+        public static int multiply(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        public static int divide(int num1, int num2) 
+        {
+            return num1 / num2;
+        }
+
+        public static int subtract(int num1, int num2) 
+        {
+            return num1 - num2;
         }
     }
 }
