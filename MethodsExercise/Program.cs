@@ -26,6 +26,7 @@
             Console.WriteLine(multiply(2, 2));
             Console.WriteLine(divide(2,2));
             Console.WriteLine(subtract(2,2));
+            Console.WriteLine(Sum(2,2,2,3,4));
         }
 
         public static int add(int num1, int num2)
@@ -46,6 +47,18 @@
         public static int subtract(int num1, int num2) 
         {
             return num1 - num2;
+        }
+
+        public static int Sum(params int[] list)
+        {
+            int sum = 0;
+
+            for(int i =0; i < list.Length; i++)
+            {
+                int placeholder = list[i];
+                sum = sum + placeholder;
+            }
+            return sum;
         }
     }
 }
